@@ -1,12 +1,12 @@
 import Topbar from './Topbar';
 import Footer from './Footer';
-const Hello = () => {
+const Login = () => {
     return(
         <div>
             <Topbar fixed="top" />
-            회원가입
+            로그인
             <Footer />
         </div>
     )
 }
-export default Hello;
+export default Login;

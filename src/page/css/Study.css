@@ -1,0 +1,33 @@
+.study-form-container{
+    padding:10px;
+    border: 2px solid #8B8DB9;
+    border-radius: 25px;
+}
+.StudyContent{
+    display: flex; 
+    /* justify-content: center;  */
+    flex-direction: column;
+    align-items: center; 
+}
+.createStudy{
+    height: 50px;
+    width: 150px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: bold;
+    background-color: white;
+    border-color:#8B8DB9;
+    cursor: pointer;
+    margin-left: 42%;
+    border-radius: 25px;
+}
+
+.StudyForm{
+    text-align: left;
+    width: 60%;
+    display: none;
+}
+
+.StudyList{
+    margin:auto;
+    width: 70%;
+}

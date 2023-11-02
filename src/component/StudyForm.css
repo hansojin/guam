@@ -1,0 +1,62 @@
+.study-form-container {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'NanumSquareNeo-Variable';
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'NanumSquareNeo-Variable';
+    border-radius: 25px;
+
+}
+
+label+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+label+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+label{
+    font-weight: bold;
+}

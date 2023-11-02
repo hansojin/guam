@@ -4,9 +4,10 @@ import Community from "./page/Community.jsx";
 import IamHere from "./page/IamHere.jsx";
 import Looking4U from "./page/Looking4U.jsx";
 import MyPage from "./page/MyPage.jsx";
-import Search from "./page/Search.jsx";
-import Study from "./page/Search.jsx";
+import Study from "./page/Study.jsx";
 import Hello from "./page/Hello.jsx";
+import Search from "./page/Search.jsx";
+import Login from "./page/Login.jsx";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/Community" element={<Community />} />
             <Route path="/Search" element={<Search />} />
             <Route path="/Hello" element={<Hello />} />
+            <Route path="/Login" element={<Login />} />
           </Routes>
         </Router>
     </div>
