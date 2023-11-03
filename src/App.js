@@ -8,6 +8,7 @@ import Study from "./page/Study.jsx";
 import Hello from "./page/Hello.jsx";
 import Search from "./page/Search.jsx";
 import Login from "./page/Login.jsx";
+import CommunityPost from "./page/CommunityPost.jsx";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Study" element={<Study />} />
             <Route path="/MyPage" element={<MyPage />} />
             <Route path="/Community" element={<Community />} />
+            <Route path="/CommunityPost" element={<CommunityPost />} />
             <Route path="/Search" element={<Search />} />
             <Route path="/Hello" element={<Hello />} />
             <Route path="/Login" element={<Login />} />

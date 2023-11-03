@@ -1,18 +1,117 @@
-.test1{
-    height:200px;
-    width: 200px;
-    background-color: #fdf4ea
-    /* 자유 */
+
+
+.community-form-container{
+    padding:10px;
+    border: 2px solid #8B8DB9;
+    border-radius: 25px;
 }
-.test2{
-    height:200px;
-    width: 200px;
-    background-color: #f0eaf3
-    /* QnA */
+.CommunityMain{
+    display: flex; 
+    /* justify-content: center;  */
+    flex-direction: column;
+    align-items: center; 
 }
-.test3{
-    height:200px;
-    width: 200px;
-    background-color: #d4eef8
-    /* 진로 */
+.joinCommunity{
+    height: 50px;
+    width: 150px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: bold;
+    background-color: white;
+    border-color:#8B8DB9;
+    cursor: pointer;
+    margin-left: 42%;
+    border-radius: 25px;
 }
+
+.CommForm{
+    text-align: left;
+    width: 60%;
+    display: none;
+}
+
+.CommList{
+    margin:auto;
+    width: 60%;
+}
+
+.CommList {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
+  }
+  
+  .post-box {
+    width: 80%;
+    height: 250px; 
+    border: 4px solid #8B8DB9;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px auto;
+  }
+
+  .post-link {
+    text-decoration: none; 
+    color: #000; 
+  }
+
+ /* Post Page CSS */
+  
+ 
+  
+  .CommunityPostMain {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .post-content {
+    text-align: left;
+    width: 800px; 
+    padding: 35px;
+    border: 2px solid #8B8DB9;
+    border-radius: 15px;
+  }
+  
+
+  .CommunityPostMain p:first-child{
+    margin-top: 25px;
+  }
+
+  .post-content textarea{
+    width: 88%;
+    height: 60px;
+    font-family: 'NanumSquareNeo-Variable';
+    padding:10px;
+    vertical-align: top;
+  }
+  .post-content button{
+    width: 7%;
+    height: 80px;
+    margin-left: 5px;
+    font-family: 'NanumSquareNeo-Variable';
+    background-color: white;
+    border-color: #8B8DB9;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    vertical-align: top;
+  }
+
+  /* 댓글 블록 스타일 */
+.comment-block {
+    border-bottom: 1px solid #8B8DB9;
+    padding: 10px;
+    margin: 10px 0;
+    
+  }
+  
+  .comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .comment-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }

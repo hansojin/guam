@@ -39,16 +39,16 @@ const StudyList = () => {
   ];
 
   return (
-    <div className="StudyList">
+    <div className="StudyList" >
       {studyData.map((study, index) => (
         <div key={index} className="studyItem">
-          <p style={{ color: study.status === '모집중' ? 'green' : 'red' }}>{study.status}</p>
+          <p style={{ color: study.status === '모집중' ? 'green' : 'red' , fontWeight:'bold', letterSpacing:'0.3em'}}>{study.status}</p>
           <h2>➤ {study.title}</h2>
           <h3><CategoryOutlinedIcon style={{marginBottom:'-7px'}}/>  {study.cate}</h3>
-          <p dangerouslySetInnerHTML={{ __html: study.content }} />
+          <p dangerouslySetInnerHTML={{ __html: study.content }} style={{marginLeft: '3%', marginRight:'3%'}}/>
           <p>
             <PeopleAltOutlinedIcon style={{marginBottom:'-7px'}}/>  {study.cur} / {study.max}
-            <button className='JoinStudyBtn' style={{ border:'solid blue 1px', borderRadius: '4px',backgroundColor:'white', height:'30px', width:'70px', float:'right', cursor:'pointer',marginTop:'-8px', fontFamily: 'NanumSquareNeo-Variable'}}>참여하기</button>
+            <button className='JoinStudyBtn' style={{ border:'solid #8B8DB9 1px', borderRadius: '4px',backgroundColor:'white', height:'35px', width:'100px', float:'right', cursor:'pointer',marginTop:'-8px', fontFamily: 'NanumSquareNeo-Variable', padding:'5px'}}>참여하기</button>
           </p>
           
           <hr />

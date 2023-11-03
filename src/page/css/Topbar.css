@@ -1,11 +1,6 @@
 .guam{
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-decoration: none;
-}
-span{
-    font-family: 'GoryeongStrawberry';
-    font-size: 2.2em;
-    color:#26469B
 }
 
 .navbarName{
@@ -13,7 +8,7 @@ span{
     font-size: 1.5em;
     letter-spacing :1.5px;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 35px;
     margin-top: 20px;
     color:#8B8DB9;
     justify-content: space-between;
@@ -42,7 +37,7 @@ span{
     margin-top: 20px;
     border-radius: 25px;
     float:right;
-    margin-left: 140px;
+    margin-left: 100px;
 }
 
 
@@ -53,7 +48,13 @@ div>input{
 }
 
 .user{
-    margin-top: 22px;
-    color:#8B8DB9;
+    margin-top: 30px;
 }
 
+.user .navbarName:hover{
+    color : #26469B;
+}
+
+.active{
+    color : #26469B;
+}
