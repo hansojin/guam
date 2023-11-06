@@ -11,6 +11,9 @@ const Study = () => {
   const toggleForm = () => {
     setShowForm(!showForm);
   };
+  const onCancel = () => {
+    setShowForm(false);
+  };
 
   return (
     <div>
@@ -20,7 +23,7 @@ const Study = () => {
           + 스터디 만들기
         </button>
         <div className='StudyForm' style={{ display: showForm ? 'block' : 'none' }}>
-          <StudyForm />
+          <StudyForm onCancel={onCancel}/>
         </div>
         <div className='StudyList'>
             <StudyList />

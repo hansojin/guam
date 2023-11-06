@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CommForm.css'; 
 
-const CommForm = () => {
+const CommForm = ({ onCancel }) => {
     const [category, setCategory] = useState('자유 주제');
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
@@ -33,7 +33,7 @@ const CommForm = () => {
                 </div>
                 <div className="button-group">
                     <button type="submit" className="submit-button">등록</button>
-                    <button type="button" className="cancel-button">취소</button>
+                    <button type="button" className="cancel-button" onClick={onCancel}>취소</button>
                 </div>
             </form>
         </div>

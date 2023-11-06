@@ -15,11 +15,11 @@ const CommList = [
         three:''
     },
     {
-        cate: 'QnA',
-        title: 'docker 활용 방법 다들 어떻게 하고 계신가요?',
-        contents: '혼자 취미로 개발하고 있는데, 리눅스 머신에서 혼자 하다보니 docker 장점을 잘 살리고 있지 못한거 같아서요.. spring이랑 db 각각 포트 다르게 띄워서 사용하는거랑 container 각각 하나씩 띄운 후 spring이랑 db 설치해서 사용하는거랑 비교하면 차이가 나지 않는것 같네요. \n\n혹시 혼자 개발하실 때 좀 더 잘 활용해서 사용하는 방법이 있을까요?\n\ncase 1 : 리눅스 머신에 spring, mysql 모두 띄워서 사용\n case 2 : docker container에 각각 spring, mysql 띄워서 사용\n\n 다들 어떻게 사용하시는지 궁금합니다. 현업에서는 어떻게 활용하고 있는지도 공유해주시면 감사하겠습니다(_ _)',
-        writer: '박구함',
-        views: 3,
+        cate: '진로 고민',
+        title: '컴퓨터 공학 전공자',
+        contents: '컴퓨터 공학 전공자로서 더미 데이터와 관련한 이직 고민을 풀고 싶습니다. 더미 데이터와 컴퓨터 공학에 대한 생각을 나누어주세요.',
+        writer: '이구함',
+        views: 5,
         comments: 0,
         oneW:'',
         one:'',
@@ -35,7 +35,7 @@ const CommList = [
         writer: '이구함',
         views: 10,
         comments: 2,
-        oneW:'문대',
+        oneW:'문돼',
         one:'10',
         twoW:'허각',
         two:'30',
@@ -57,11 +57,11 @@ const CommList = [
         three:''
     },
     {
-        cate: '진로 고민',
-        title: '컴퓨터 공학 전공자',
-        contents: '컴퓨터 공학 전공자로서 더미 데이터와 관련한 이직 고민을 풀고 싶습니다. 더미 데이터와 컴퓨터 공학에 대한 생각을 나누어주세요.',
-        writer: '이구함',
-        views: 5,
+        cate: 'QnA',
+        title: 'docker 활용 방법 다들 어떻게 하고 계신가요?',
+        contents: '혼자 취미로 개발하고 있는데, 리눅스 머신에서 혼자 하다보니 docker 장점을 잘 살리고 있지 못한거 같아서요.. spring이랑 db 각각 포트 다르게 띄워서 사용하는거랑 container 각각 하나씩 띄운 후 spring이랑 db 설치해서 사용하는거랑 비교하면 차이가 나지 않는것 같네요. \n\n혹시 혼자 개발하실 때 좀 더 잘 활용해서 사용하는 방법이 있을까요?\n\ncase 1 : 리눅스 머신에 spring, mysql 모두 띄워서 사용\n case 2 : docker container에 각각 spring, mysql 띄워서 사용\n\n 다들 어떻게 사용하시는지 궁금합니다. 현업에서는 어떻게 활용하고 있는지도 공유해주시면 감사하겠습니다(_ _)',
+        writer: '박구함',
+        views: 3,
         comments: 0,
         oneW:'',
         one:'',
@@ -70,6 +70,7 @@ const CommList = [
         threeW:'',
         three:''
     },
+    
     {
         cate: 'QnA',
         title: 'React 컴포넌트를 어떻게 최적화할 수 있을까요?',

@@ -9,7 +9,7 @@ import Hello from "./page/Hello.jsx";
 import Search from "./page/Search.jsx";
 import Login from "./page/Login.jsx";
 import CommunityPost from "./page/CommunityPost.jsx";
-
+import InfoEdit from "./page/InfoEdit.jsx";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
             <Route path="/Search" element={<Search />} />
             <Route path="/Hello" element={<Hello />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/InfoEdit" element={<InfoEdit />} />
           </Routes>
         </Router>
     </div>

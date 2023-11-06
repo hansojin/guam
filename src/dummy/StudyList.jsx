@@ -48,7 +48,9 @@ const StudyList = () => {
           <p dangerouslySetInnerHTML={{ __html: study.content }} style={{marginLeft: '3%', marginRight:'3%'}}/>
           <p>
             <PeopleAltOutlinedIcon style={{marginBottom:'-7px'}}/>  {study.cur} / {study.max}
-            <button className='JoinStudyBtn' style={{ border:'solid #8B8DB9 1px', borderRadius: '4px',backgroundColor:'white', height:'35px', width:'100px', float:'right', cursor:'pointer',marginTop:'-8px', fontFamily: 'NanumSquareNeo-Variable', padding:'5px'}}>참여하기</button>
+            <button className='JoinStudyBtn' style={{ border:'solid #8B8DB9 1px', borderRadius: '4px',backgroundColor:'white', height:'35px', width:'100px', float:'right', cursor:'pointer',marginTop:'-8px', fontFamily: 'NanumSquareNeo-Variable', padding:'5px'}}>
+              참여하기
+            </button>
           </p>
           
           <hr />

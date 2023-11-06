@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './StudyForm.css';
 
-const StudyForm = () => {
+const StudyForm = ({ onCancel }) => {
     const [category, setCategory] = useState('코테 준비');
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
@@ -11,6 +11,7 @@ const StudyForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // 폼 데이터 처리 로직 추가
+        
     };
 
     return (
@@ -63,7 +64,7 @@ const StudyForm = () => {
                 </div>
                 <div className="button-group">
                     <button type="submit" className="submit-button">등록</button>
-                    <button type="button" className="cancel-button">취소</button>
+                    <button type="button" className="cancel-button" onClick={onCancel}>취소</button>
                 </div>
             </form>
         </div>
