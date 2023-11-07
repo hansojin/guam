@@ -14,13 +14,13 @@ const CommForm = ({ onCancel }) => {
     return (
         <div className="community-form-container">
             <h2 style={{ color: '#8B8DB9', textDecoration: 'underline' }}>글 작성하기</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} style={{fontFamily: 'NanumSquareNeo-Variable'}}>
                 <div>
                     <label>분류</label>
-                    <select value={category} onChange={(e) => setCategory(e.target.value)}>
-                        <option value="자유 주제">자유 주제</option>
-                        <option value="진로 고민">진로 고민</option>
-                        <option value="QnA">QnA</option>
+                    <select value={category} onChange={(e) => setCategory(e.target.value)} >
+                        <option value="자유 주제" >자유 주제</option>
+                        <option value="진로 고민" >진로 고민</option>
+                        <option value="QnA" >QnA</option>
                     </select>
                 </div>
                 <div>

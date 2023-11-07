@@ -1,7 +1,7 @@
 import React from 'react';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
-
+import '../component/StudyForm.css'
 const StudyList = () => {
   const studyData = [
     {

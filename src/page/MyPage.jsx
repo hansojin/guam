@@ -4,8 +4,25 @@ import { Link } from 'react-router-dom';
 import FindInPageOutlinedIcon from '@mui/icons-material/FindInPageOutlined';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 const MyPage = () => {
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <div>
@@ -21,13 +38,32 @@ const MyPage = () => {
                     </Link>
 
 
-                    <p style={{ marginRight: '20px', fontSize: '0.9em', cursor: 'pointer', color: 'gray', textAlign: 'right' }}>탈퇴하기</p>
-                    {/* 탈퇴하기 누르면 user table에서 삭제 처리 */}
+                    <p onClick={handleClickOpen} style={{ marginRight: '20px', fontSize: '0.9em', cursor: 'pointer', color: 'gray', textAlign: 'right' }}>탈퇴하기</p>
+                    <Dialog
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="alert-dialog-title"
+                        aria-describedby="alert-dialog-description"
+                    >
+                        <DialogTitle id="alert-dialog-title" style={{ fontFamily: 'NanumSquareNeo-Variable' }}>
+                            {"회원 탈퇴"}
+                        </DialogTitle>
+                        <DialogContent>
+                            <DialogContentText id="alert-dialog-description" style={{ fontFamily: 'NanumSquareNeo-Variable' }}>
+                                정말 탈퇴 하시겠습니까?
+                            </DialogContentText>
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={handleClose} style={{ fontFamily: 'NanumSquareNeo-Variable' }}>취소</Button>
+                            <Button onClick={handleClose} autoFocus style={{ fontFamily: 'NanumSquareNeo-Variable' }}>탈퇴하기</Button>
+                                        {/* 탈퇴하기 누르면 user table에서 삭제 처리 + GUAM 메인 페이지로 이동*/}
+                        </DialogActions>
+                    </Dialog>
 
                 </div>
-                <div className='Track' style={{ width: '66%', marginLeft: '38%', marginTop:'50px',minHeight:'650px'}}>
+                <div className='Track' style={{ width: '66%', marginLeft: '38%', marginTop: '50px', minHeight: '650px' }}>
                     <p style={{ display: 'flex', alignItems: 'center', marginLeft: '-30px', fontSize: '1.2em' }}>
-                        <FindInPageOutlinedIcon style={{marginRight:'10px'}} />내가 쓴 글
+                        <FindInPageOutlinedIcon style={{ marginRight: '10px' }} />내가 쓴 글
                     </p>
                     <p style={{ whiteSpace: 'normal', wordWrap: 'break-word' }}>
                         {/* 쓴글 가져오기 */}
@@ -35,7 +71,7 @@ const MyPage = () => {
                     </p>
                     <br />
                     <p style={{ display: 'flex', alignItems: 'center', marginLeft: '-30px', fontSize: '1.2em' }}>
-                        <ThumbUpOutlinedIcon style={{marginRight:'10px'}}/>내 좋아요
+                        <ThumbUpOutlinedIcon style={{ marginRight: '10px' }} />내 좋아요
                     </p>
                     <p>
                         {/* 좋아요 가져오기 */}
@@ -43,7 +79,7 @@ const MyPage = () => {
                     </p>
                     <br />
                     <p style={{ display: 'flex', alignItems: 'center', marginLeft: '-30px', fontSize: '1.2em' }}>
-                        <LibraryBooksIcon style={{marginRight:'10px'}}/>참여한 스터디
+                        <LibraryBooksIcon style={{ marginRight: '10px' }} />참여한 스터디
                     </p>
                     <p>
                         {/* 스터디 참여하기 목록 가져오기 */}

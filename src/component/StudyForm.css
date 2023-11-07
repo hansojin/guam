@@ -60,3 +60,7 @@ label+textarea {
 label{
     font-weight: bold;
 }
+
+.JoinStudyBtn:hover {
+    color: #8B8DB9;
+  }
