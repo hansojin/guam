@@ -24,6 +24,13 @@ const MyPage = () => {
         setOpen(false);
     };
 
+    const toGit = () => {
+        // if (githubUrl) {
+        //   window.location.href = githubUrl;
+        // }
+        window.location.href = 'https://www.github.com/hansojin';
+      };
+    
     return (
         <div>
             <Topbar fixed="top" />
@@ -32,7 +39,8 @@ const MyPage = () => {
                     <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '1.1em' }}>내 정보</p>
                     <p style={{ marginLeft: '20px' }}>이름<span style={{ marginLeft: '20px' }}>한소진</span></p>
                     <p style={{ marginLeft: '20px' }}>학교<span style={{ marginLeft: '20px' }}>아주대학교</span></p>
-                    <p style={{ marginLeft: '20px' }}>깃헙<span style={{ marginLeft: '20px' }}>github.com/hansojin</span></p>
+                    <p style={{ marginLeft: '20px' }}>깃헙<span style={{ marginLeft: '20px', cursor:'pointer' }} onClick={toGit}>
+                        github.com/hansojin</span></p>
                     <Link to="/InfoEdit" style={{ textDecoration: 'none' }}>
                         <p style={{ marginRight: '20px', marginTop: '30px', fontSize: '0.9em', color: 'gray', textAlign: 'right' }}>수정하기</p>
                     </Link>

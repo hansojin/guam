@@ -49,6 +49,8 @@ const InfoEdit = () => {
                             name="id"
                             value={'hansojin'}
                             disabled
+                            style={{backgroundColor:'#E3E0E9'}}
+                            
                         />
                     </div>
                     <div className="form-group">
@@ -59,6 +61,7 @@ const InfoEdit = () => {
                             name="name"
                             value={'한소진'}
                             disabled
+                            style={{backgroundColor:'#E3E0E9'}}
                         />
                     </div>
                     <div className="form-group">
